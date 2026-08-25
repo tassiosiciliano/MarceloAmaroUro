@@ -18,7 +18,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #acaead; }
+  color: #000000; }
 
   a:hover {
     color: #fff;
@@ -495,13 +495,14 @@ a {
     color: #fff;
     font-size: 1.5rem;
     line-height: 1.5; }
+
   .site-blocks-cover .intro-text {
     font-size: 16px;
     line-height: 1.5; }
 
   .site-blocks-section{
-  color: #fff;
-  font-weight: 200;
+  color: #000000;
+  font-weight: 300;
   font-size: 1.5rem;}
 
   .site-info {
