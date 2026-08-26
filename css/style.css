@@ -897,12 +897,12 @@ a {
     color: #fff;
     border: 1px solid transparent; }
 
-  .img-fluid {
-    border-radius: 0%;
+  .img-professional {
+    border-radius: 50%;
   }
 
-  .img-hospitals {
-    border-radius: 50%;
+  .hospital-img {
+
   }
 
   .whatsapp-float {
