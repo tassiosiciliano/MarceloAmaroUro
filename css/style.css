@@ -898,6 +898,10 @@ a {
     border: 1px solid transparent; }
 
   .img-fluid {
+    border-radius: 0%;
+  }
+
+  .img-hospitals {
     border-radius: 50%;
   }
 
