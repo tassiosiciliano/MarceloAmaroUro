@@ -1317,7 +1317,9 @@ a:hover {
   border-radius: 50%;
 }
 
-.hospital-img {}
+.hospital-img {
+  width: 160px;
+}
 
 .whatsapp-float {
   color: rgb(36, 222, 79);
