@@ -1317,9 +1317,22 @@ a:hover {
   border-radius: 50%;
 }
 
-.hospital-img {
-  width: 160px;
-}
+.hospital-arrow {
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .hospital-arrow:hover {
+    text-decoration: none;
+  }
+
+  .hospital-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
 .whatsapp-float {
   color: #25D366;
