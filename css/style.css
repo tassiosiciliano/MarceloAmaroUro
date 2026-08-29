@@ -1336,10 +1336,14 @@ a:hover {
     object-fit: contain;
   }
 
-.whatsapp-float {
+.hosp-link:hover {
+  color: #d2d4c5;
+  font-weight: 300}
+
+  .whatsapp-float {
   color: #25D366;
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-}
+  }
