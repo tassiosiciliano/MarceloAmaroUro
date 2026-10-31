@@ -299,13 +299,21 @@ a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.site-navbar .site-logo {
-  font-weight: 200;
+.site-navbar, .site-logo {
+    text-align: center;
 }
 
-.site-navbar .site-logo a {
-  font-weight: 200;
-  color: #fff;
+.logo-name {
+    font-weight: 600;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.logo-specialty {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 2px;
+    color: #fff;
 }
 
 .site-navbar .site-navigation .site-menu {
@@ -707,7 +715,7 @@ a:hover {
 }
 
 .site-blocks-cover .sub-text {
-  font-size: 1.1rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
   letter-spacing: .2em;
