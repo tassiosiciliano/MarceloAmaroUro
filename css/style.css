@@ -1360,7 +1360,7 @@ a:hover {
   .whatsapp-float {
   color: #25D366;
   position: fixed;
-  bottom: 70px;
+  bottom: 65px;
   right: 20px;
   z-index: 2000;
   }
@@ -1374,6 +1374,7 @@ a:hover {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
+  font-size: small;
   font-weight: bold;
   text-transform: uppercase;
   }
@@ -1510,8 +1511,8 @@ a:hover {
 /* Mobile */
 @media (max-width: 767px) {
     .location-section {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .map-container {
