@@ -1364,3 +1364,81 @@ a:hover {
   right: 20px;
   z-index: 1000;
   }
+
+  /* =====================================
+   HOSPITALS - INFINITE SCROLL
+===================================== */
+
+.hospital-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.hospital-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: hospital-scroll 45s linear infinite;
+}
+
+.hospital-item {
+    flex: 0 0 240px;
+    width: 240px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hospital-item img {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* Continuous movement */
+@keyframes hospital-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause when mouse is over the carousel */
+.hospital-marquee:hover .hospital-track {
+    animation-play-state: paused;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+
+    .hospital-item {
+        flex: 0 0 170px;
+        width: 170px;
+        padding: 0 20px;
+    }
+
+    .hospital-item img {
+        max-width: 140px;
+        height: 75px;
+    }
+
+    .hospital-track {
+        animation-duration: 35s;
+    }
+
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .hospital-track {
+        animation: none;
+    }
+}
