@@ -721,6 +721,16 @@ a:hover {
   letter-spacing: .2em;
 }
 
+.sub-text-hero{
+  font-size: 2rem;
+  color: #fff;
+}
+
+.sub-text-hero-crm{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
 .site-blocks-cover h1 {
   font-weight: 900;
   color: #fff;
