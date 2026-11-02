@@ -715,20 +715,38 @@ a:hover {
 }
 
 .site-blocks-cover .sub-text {
-  font-size: 2.5rem;
+  font-size: 28px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
   letter-spacing: .2em;
 }
 
+@media (min-width: 992px) {
+  .sub-text {
+    font-size: 30px;
+  }
+}
+
 .sub-text-hero{
-  font-size: 2rem;
+  font-size: 22px;
   color: #fff;
 }
 
+@media (min-width: 992px) {
+  .sub-text-hero {
+    font-size: 28px;
+  }
+}
+
 .sub-text-hero-crm{
-  font-size: 1.5rem;
+  font-size: 18px;
   color: #fff;
+}
+
+@media (min-width: 992px) {
+  .sub-text-hero-crm {
+    font-size: 22px;
+  }
 }
 
 .site-blocks-cover h1 {
@@ -1459,6 +1477,7 @@ a:hover {
     }
 
 }
+
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
