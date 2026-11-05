@@ -27,145 +27,86 @@
   <div class="site-wrap">
 
     <!-- Mobile Menu -->
-    <div class="site-mobile-menu">
+    <div class="site-mobile-menu" id="mobileMenu" aria-hidden="true">
       <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
+        <span class="mobile-menu-title">MENU</span>
+        <button type="button" class="mobile-menu-close" aria-label="Fechar menu">
+          <span class="icon-close2" aria-hidden="true"></span>
+        </button>
       </div>
-
-      <div class="site-mobile-menu-body"></div>
+      <nav class="site-mobile-menu-body" aria-label="Navegação mobile">
+        <ul class="mobile-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Especialidades</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#procedures">Procedimentos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
     </div>
+    <button type="button" class="mobile-menu-backdrop" aria-label="Fechar menu">X</button>
     <!-- End Mobile Menu -->
 
 
     <!-- Navbar -->
     <div class="site-navbar-wrap">
-
       <div class="site-navbar-top">
         <div class="container py-2">
           <div class="row align-items-center">
-
             <div class="col-6">
-              <span class="d-none d-md-inline-block text-white">
-                CRM/SP 215.757 |
-              </span>
-
-              <span class="d-none d-md-inline-block text-white">
-                RQE 148052 |
-              </span>
-
-              <span class="d-none d-md-inline-block text-white">
-                Urologista |
-              </span>
-
-              <span class="d-none d-md-inline-block text-white">
-                Uro-oncologia |
-              </span>
-
-              <span class="d-none d-md-inline-block text-white">
-                Próstata |
-              </span>
-
-              <span class="d-none d-md-inline-block text-white">
-                Cálculos Renais
-              </span>
+              <span class="d-none d-md-inline-block text-white">CRM/SP 215.757 |</span>
+              <span class="d-none d-md-inline-block text-white">RQE 148052 |</span>
+              <span class="d-none d-md-inline-block text-white">Urologista |</span>
+              <span class="d-none d-md-inline-block text-white">Uro-oncologia |</span>
+              <span class="d-none d-md-inline-block text-white">Próstata |</span>
+              <span class="d-none d-md-inline-block text-white">Cálculos Renais</span>
             </div>
-
             <div class="col-6">
               <div class="d-flex ml-auto">
-
                 <a href="mailto:marcelo_amaro5@hotmail.com" class="d-flex align-items-center ml-auto mr-4">
                   <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-
-                  <span class="d-none d-md-inline-block ml-1">
-                    E-mail
-                  </span>
+                  <span class="d-none d-md-inline-block ml-1">E-mail</span>
                 </a>
-
                 <a href="https://api.whatsapp.com/send?phone=+5511915675153&amp;text=Olá+Dr.+Marcelo+gostaria+de+agendar+uma+consulta."
-                  target="_blank" class="d-flex align-items-center">
-
+                   target="_blank" rel="noopener noreferrer" class="d-flex align-items-center">
                   <i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
-
-                  <span class="d-none d-md-inline-block ml-1">
-                    WhatsApp
-                  </span>
+                  <span class="d-none d-md-inline-block ml-1">WhatsApp</span>
                 </a>
-
               </div>
             </div>
-
           </div>
         </div>
       </div>
-
 
       <div class="site-navbar">
         <div class="container py-1">
-
-          <div class="row align-items-center">
-
-            <div class="col-2">
-              <div class="mb-0 site-logo text-center">
-        <img src="images/logo-small.png" alt="Logo Dr. Marcelo Amaro">
-        <!-- <div class="logo-name">Dr. Marcelo Amaro</div> -->
-        <!-- <div class="logo-specialty">Urologia</div> -->
-    </div>
-            </div>
-
-            <div class="col-10">
-              <nav class="site-navigation text-right" role="navigation">
-
-                <div class="container">
-
-                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
-                    <a href="#" class="site-menu-toggle js-menu-toggle text-white">
-                      <span class="icon-menu h3"></span>
-                    </a>
-                  </div>
-
-                  <ul class="site-menu js-clone-nav d-none d-lg-block">
-
-                    <li class="has-children active">
-                      <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                      <a href="#services">Especialidades</a>
-                    </li>
-
-                    <li>
-                      <a href="#about">Sobre</a>
-                    </li>
-
-                    <li>
-                      <a href="#procedures">Procedimentos</a>
-                    </li>
-
-                    <li>
-                      <a href="#contact">Contato</a>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </nav>
-            </div>
-
+          <div class="navbar-main-row">
+            <a href="index.html" class="site-logo text-center" aria-label="Dr. Marcelo Amaro - início">
+              <img src="images/logo-small.png" alt="Logo Dr. Marcelo Amaro">
+            </a>
+            <nav class="site-navigation" role="navigation" aria-label="Navegação principal">
+              <ul class="site-menu desktop-menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#services">Especialidades</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#procedures">Procedimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
+            </nav>
+            <button type="button" class="mobile-menu-trigger" aria-label="Abrir menu"
+                    aria-controls="mobileMenu" aria-expanded="false">
+              <span></span><span></span><span></span>
+            </button>
           </div>
-
         </div>
       </div>
-
     </div>
     <!-- End Navbar -->
 
 
 <!-- Hero -->
     <div class="site-blocks-cover" style="background-image: url(images/marcelo_6.jpg);" data-aos="fade"
-      data-stellar-background-ratio="0.8">
+      data-stellar-background-ratio="0.5">
 
       <div class="container">
 
@@ -725,10 +666,6 @@
 
               <div class="col-md-12">
 
-                <h3 class="footer-heading mb-4">
-                  Navigation
-                </h3>
-
               </div>
 
 
@@ -737,23 +674,23 @@
                 <ul class="list-unstyled">
 
                   <li>
-                    <a href="#">Home</a>
+                    <a href="#">HOME</a>
                   </li>
 
                   <li>
-                    <a href="#services">Especialidades</a>
+                    <a href="#services">ESPECIALIDADES</a>
                   </li>
 
                   <li>
-                    <a href="#about">Sobre</a>
+                    <a href="#about">SOBRE</a>
                   </li>
 
                   <li>
-                    <a href="#procedures">Procedimentos</a>
+                    <a href="#procedures">PROCEDIMENTOS</a>
                   </li>
 
                   <li>
-                    <a href="#contact">Contato e Localização</a>
+                    <a href="#contact">CONTATO E LOCALIZAÇÃO</a>
                   </li>
 
                 </ul>
@@ -817,6 +754,47 @@
   <script src="js/bootstrap-datepicker.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    // Controle do menu mobile.
+    (function () {
+      const body = document.body;
+      const menu = document.getElementById('mobileMenu');
+      const trigger = document.querySelector('.mobile-menu-trigger');
+      const closeButton = document.querySelector('.mobile-menu-close');
+      const backdrop = document.querySelector('.mobile-menu-backdrop');
+      const menuLinks = menu ? menu.querySelectorAll('a') : [];
+
+      if (!menu || !trigger || !closeButton || !backdrop) return;
+
+      function openMenu() {
+        body.classList.add('mobile-menu-open');
+        menu.setAttribute('aria-hidden', 'false');
+        trigger.setAttribute('aria-expanded', 'true');
+        trigger.setAttribute('aria-label', 'Fechar menu');
+      }
+
+      function closeMenu() {
+        body.classList.remove('mobile-menu-open');
+        menu.setAttribute('aria-hidden', 'true');
+        trigger.setAttribute('aria-expanded', 'false');
+        trigger.setAttribute('aria-label', 'Abrir menu');
+      }
+
+      trigger.addEventListener('click', function () {
+        body.classList.contains('mobile-menu-open') ? closeMenu() : openMenu();
+      });
+      closeButton.addEventListener('click', closeMenu);
+      backdrop.addEventListener('click', closeMenu);
+      menuLinks.forEach(function (link) { link.addEventListener('click', closeMenu); });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+      });
+      window.addEventListener('resize', function () {
+        if (window.innerWidth >= 992) closeMenu();
+      });
+    })();
+  </script>
+
 
 </body>
 
