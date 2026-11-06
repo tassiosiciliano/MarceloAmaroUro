@@ -1386,28 +1386,6 @@ a:hover {
   color: #d2d4c5;
   font-weight: 300}
 
-  .whatsapp-float {
-  color: #25D366;
-  position: fixed;
-  bottom: 65px;
-  right: 20px;
-  z-index: 2000;
-  }
-
-  .whatsapp-text {
-  background-color:  #25D366;
-  border-radius: 15pt;
-  padding: 8px;
-  color: #fff;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  font-size: small;
-  font-weight: bold;
-  text-transform: uppercase;
-  }
-
   /* =====================================
    HOSPITALS - INFINITE SCROLL
 ===================================== */
@@ -1762,4 +1740,62 @@ body.mobile-menu-open .mobile-menu-backdrop { opacity: 1; visibility: visible; }
   .navbar-main-row .site-logo img { max-width: 175px; max-height: 52px; }
 }
 
+.appointment {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  background-color: #25D366;
+  border-radius: 15px;
+}
 
+.appointment-text {
+  color: #fff;
+  font-weight: 600;
+  padding: 8px;
+  white-space: nowrap
+}
+
+.appointment-text:hover{
+  color: #000;
+}
+
+.appointment-whatsapp {
+  color: #fff;
+  padding-left: 8px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-float {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  background-color:  #25D366;
+  border-radius: 15pt;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  padding: 8px;
+}
+
+  .btn-whatsapp {
+  color: #fff;
+  }
+
+  .whatsapp-text {
+  color: #fff;
+  font-size: small;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 8px;
+  }
+
+  .whatsapp-text:hover {
+  color: #000;
+  }
